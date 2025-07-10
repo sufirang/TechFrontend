@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YAY! It's BOGO</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>YAY! It's BOGO</h2>
+
+      <div class="box selected" data-price="10" onclick="selectBox(this)">
+        <div class="row">
+          <div>
+            <input type="radio" name="unit" checked />
+            <strong>1 Unit</strong>
+            <span
+              style="background: #ff5a8a; color: white;
+                padding: 2px 5px; font-size: 12px; border-radius: 3px;margin-left: 5px;">10% Off</span>
+                <br />
+            <small>Standard Price</small>
+          </div>
+          <div>
+            <div>$10.00 USD</div>
+            <div class="price-line">$24.00 USD</div>
+          </div>
+        </div>
+        <div class="details show">
+          <div>Size & Colour</div>
+          <div class="dropdowns">
+            <select>
+              <option>S</option>
+            </select>
+            <select>
+              <option>Black</option>
+            </select>
+          </div>
+        </div>
+        <div class="dropdowns">
+          <select>
+            <option>S</option>
+          </select>
+          <select>
+            <option>Colour</option>
+          </select>
+        </div>
+      </div>
+      <div class="box" data-price="18" onclick="selectBox(this)">
+        <div class="ribbon">MOST POPULAR</div>
+        <div class="row">
+          <div>
+            <input type="radio" name="unit" />
+            <strong>2 Unit</strong>
+            <span
+            style="background: #ff5a8a;color: white;
+            padding: 2px 5px; font-size: 12px; border-radius: 3px; margin-left: 5px;">20% Off</span>
+          </div>
+          <div>
+            <div>$18.00 USD</div>
+            <div class="price-line">$24.00 USD</div>
+          </div>
+        </div>
+        <div class="details">
+          <div>Size & Colour</div>
+          <div class="dropdowns">
+            <select>
+              <option>S</option>
+            </select>
+            <select>
+              <option>Black</option>
+            </select>
+          </div>
+          <div class="dropdowns">
+            <select>
+              <option>S</option>
+            </select>
+            <select>
+              <option>Colour</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="box" data-price="24" onclick="selectBox(this)">
+        <div class="row">
+          <div>
+            <input type="radio" name="unit" />
+            <strong>3 Unit</strong>
+            <span
+              style="background: #ff5a8a; color: white;
+                padding: 2px 5px; font-size: 12px; border-radius: 3px; margin-left: 5px;">30% Off</span>
+          </div>
+          <div>
+            <div>$24.00 USD</div>
+            <div class="price-line">$24.00 USD</div>
+          </div>
+        </div>
+        <div class="details">
+          <div>Size & Colour</div>
+          <div class="dropdowns">
+            <select>
+              <option>S</option>
+            </select>
+            <select>
+              <option>Black</option>
+            </select>
+          </div>
+          <div class="dropdowns">
+            <select>
+              <option>M</option>
+            </select>
+            <select>
+              <option>Colour</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="details">
+        <div>Size & Colour</div>
+        <div class="dropdowns">
+          <select>
+            <option>S</option>
+          </select>
+          <select>
+            <option>Black</option>
+          </select>
+        </div>
+        <div class="dropdowns">
+          <select>
+            <option>M</option>
+          </select>
+          <select>
+            <option>White</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="footer">
+        <span style="color: #ff5a8a">Free Delivery</span>
+        <span>Total : $<span id="total">10.00</span> USD</span>
+      </div>
+      <button class="btn">+ Add to Cart</button>
+      <div class="note">@ Powered by Pumper</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

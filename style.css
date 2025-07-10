@@ -1,0 +1,122 @@
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      padding: 30px;
+      margin: 0;
+    }
+
+    .container {
+      width: 360px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #ff5a8a;
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    h2::before, h2::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 25%;
+      height: 1px;
+      background: #ccc;
+    }
+
+    h2::before {
+      left: 0;
+    }
+
+    h2::after {
+      right: 0;
+    }
+
+    .box {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
+      position: relative;
+      transition: border 0.3s;
+    }
+
+    .box.selected {
+      border: 2px solid #ff5a8a;
+      background: #fff3f6;
+    }
+
+    .ribbon {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background: #ff5a8a;
+      color: white;
+      padding: 3px 10px;
+      font-size: 12px;
+      border-radius: 3px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .price-line {
+      text-decoration: line-through;
+      color: #aaa;
+      font-size: 13px;
+    }
+
+    .details {
+      margin-top: 10px;
+      display: none;
+    }
+
+    .details.show {
+      display: block;
+    }
+
+    .dropdowns {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    select {
+      width: 100%;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .btn {
+      margin-top: 20px;
+      width: 100%;
+      background: #ff5a8a;
+      color: white;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .note {
+      text-align: center;
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 10px;
+    }
